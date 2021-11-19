@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Armas Brancas - Galeria</title>
+	<style>
+		.gallery {
+			border: 1px solid #ccc;
+		}
+		.gallery:hover {
+			border: 1px solid #777;
+		}
+		.gallery img{
+			width: 100%;
+			height: auto;
+		}
+		.desc {
+			padding: 15px;
+			text-align: center;
+		}
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		.responsive {
+			padding: 0 6px;
+			float: left;
+			width: 24.99999%;
+		}
+		@media only screen and (max-width:  700px) {
+			.responsive {
+				width: 49.99999%;
+				margin: 6px 0;
+			}
+		}
+		@media only screen and (max-width:  500px) {
+			.responsive {
+				width: 100%;
+			}
+		}
+		body {
+		margin: 0;
+		background-color: salmon;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #333;
+			overflow: hidden;
+		}
+		li a, .dropbtn {
+      		display: inline-block;
+      		color: white;
+      		text-align: center;
+      		padding: 14px 16px;
+      		text-decoration: none;
+    	}
+		li a:hover{
+			background-color: #111;
+		}
+		li {
+			float: left;
+		}
+		#estrutura {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.dropdown {
+      		display: inline-block;
+	    }
+	    .dropdown-content {
+	      	display: none;
+	      	position: absolute;
+	      	background-color: #f9f9f9;
+	      	min-width: 160px;
+	      	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	      	z-index: 1;    
+	    }
+	    .dropdown-content a {
+	    	color: black;
+	      	padding: 12px 16px;
+	      	text-decoration: none;
+	      	display: block;
+	      	text-align: left;
+	    }
+	    .dropdown-content a:hover {
+	      	background-color: mediumpurple;
+	    }
+	    .dropdown:hover .dropdown-content {
+	      	display: block;
+	    }
+	    img {
+	    	opacity: 0.5;
+	    	border: 3px solid black;
+	    }
+	    img:hover {
+	    	opacity: 1.0;
+	    }
+	    h1 {
+	    	text-align: center;
+	    	border-bottom: 2px solid black;
+	    }
+	</style>
+</head>
+<body>
+	<ul class="menu">
+		<li><a href="index.html">Início</a></li>
+		<li><a href="armas-brancas-chinesas.html">Chinesas</a></li>
+		<li><a href="armas-brancas-romanas.html">Romanas</a></li>
+		<li class="dropdown">
+	    <a class="dropbtn" href="armas-brancas-japonesas1.html">Japonesas</a>
+	    <div class="dropdown-content">
+	      <a href="armas-brancas-japonesas1.html">Katana</a>
+	      <a href="armas-brancas-japonesas2.html">Shuriken</a>
+	      <a href="armas-brancas-japonesas3.html">Kunai</a>
+	    </div>
+	  	</li>
+	  	<li><a href="armas-brancas-galeria.html">Galeria</a></li>
+	  	<li><a href="armas-brancas-avaliacao.html">Avaliação</a></li>
+	</ul>
+	<h1>Galeria Armas Brancas</h1>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="imagens/guandao.jpg" target="_blank">
+				<img src="imagens/guandao.jpg" alt="Guan dao" width="600" height="600">
+			</a>
+			<div class="desc">
+				O Guan dao ou Kwan dao, conhecido também como "a lâmina do general", é a mais típica das armas do kung fu.
+			</div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="imagens/miaodao.jpg" target="_blank">
+				<img src="imagens/miaodao.jpg" alt="Miao Dao" width="600" height="600">
+			</a>
+			<div class="desc">
+				O miaodao (苗刀) é um dao ou sabre chinês de duas mãos da Era Republicana, com uma lâmina estreita, punholongo, e um comprimento total de 1,2 metros (47 polegadas) ou mais.
+			</div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="imagens/gladio5.png" target="_blank">
+				<img src="imagens/gladio5.png" alt="Gládio" width="600" height="400">
+			</a>
+			<div class="desc">
+				Gládio é uma espada curta utilizada na Antiguidade, que os autores latinos chamavam ense (em latim: ensis).
+			</div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="imagens/spatha.jpg" target="_blank">
+				<img src="imagens/spatha.jpg" alt="Spatha" width="600" height="400">
+			</a>
+			<div class="desc">
+				Spatha era um tipo de arma romana com lâmina de gumes rectos, medindo entre 0,5 e 1 m, com um punho de comprimento entre 18 e 20 cm, em uso nos territórios do Império Romano durante os séculos I a VI EC.
+			</div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="imagens/katana.jpg" target="_blank">
+				<img src="imagens/katana.jpg" alt="Katana" width="600" height="400">
+			</a>
+			<div class="desc">
+				Katana é uma tradicional espada japonesa (日本刀 nihontō?) que foi usada pelos samurais do Japão antigo e feudal.
+			</div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="imagens/Shuriken.jfif" target="_blank">
+				<img src="imagens/Shuriken.jfif" alt="Shuriken" width="600" height="400">
+			</a>
+			<div class="desc">
+				Shuriken (a lâmina que se atira) é uma arma de arremesso de origem japonesa e está entre as 18 disciplinas do Ninjutsu, no Shuriken Jutsu.
+			</div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="imagens/Kunai.jpg" target="_blank">
+				<img src="imagens/Kunai.jpg" alt="Kunai" width="600" height="400">
+			</a>
+			<div class="desc">
+				Kunai (苦無 Kunai) é uma arma ninja que consiste em uma lâmina de ferro com um grande furo na base, destinado a amarrar cordas, originário da era Tensho no Japão.
+			</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>

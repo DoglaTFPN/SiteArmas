@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Armas Brancas - Avaliação</title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		background-color: white;
+		border-radius: 4px;
+		resize: vertical;
+	}
+	input[type=text]:focus {
+		background-color: lightgreen;
+	}
+	label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+	input[type=submit] {
+		/** em deixa as fontes responsivas, aumentando em % **/
+		font-size: 1.3em;
+		background-color: #4caf50;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		float: right;
+		padding: 12px 20px;
+	}
+	input[type=submit]:hover {
+		background-color: #45a049;
+	}
+	.container {
+		border-radius: 5px;
+		background-color: black;
+		padding: 20px;
+		color: white;
+	}
+	.col-25 {
+		float: left;
+		width: 25%;
+		margin-top: 6px;
+	}
+	.col-75 {
+		float: left;
+		width: 75%;
+		margin-top: 6px;
+	}
+	/* Limpa floats depois das colunas */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	/* layout responsivo - quando o navegador tem menos de 600px de largura, faz com que as colunas fiquem uma sobre as outras ao invés de uma do lado da outra */
+	@media screen and (max-width: 600px) {
+		.col-25, .col-75, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+	body {
+		margin: 0;
+		background-color: #228b22;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #333;
+			overflow: hidden;
+		}
+		li a, .dropbtn {
+      		display: inline-block;
+      		color: white;
+      		text-align: center;
+      		padding: 14px 16px;
+      		text-decoration: none;
+    	}
+		li a:hover{
+			background-color: #111;
+		}
+		li {
+			float: left;
+		}
+		#estrutura {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.dropdown {
+      		display: inline-block;
+	    }
+	    .dropdown-content {
+	      	display: none;
+	      	position: absolute;
+	      	background-color: #f9f9f9;
+	      	min-width: 160px;
+	      	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	      	z-index: 1;    
+	    }
+	    .dropdown-content a {
+	    	color: black;
+	      	padding: 12px 16px;
+	      	text-decoration: none;
+	      	display: block;
+	      	text-align: left;
+	    }
+	    .dropdown-content a:hover {
+	      	background-color: mediumpurple;
+	    }
+	    .dropdown:hover .dropdown-content {
+	      	display: block;
+	    }
+	    img {
+	    	opacity: 0.5;
+	    	border: 3px solid black;
+	    }
+	    img:hover {
+	    	opacity: 1.0;
+	    }
+	    h1 {
+	    	text-align: center;
+	    	border-bottom: 2px solid black;
+	    }
+</style>
+</head>
+<body>
+	<ul class="menu">
+		<li><a href="index.html">Início</a></li>
+		<li><a href="armas-brancas-chinesas.html">Chinesas</a></li>
+		<li><a href="armas-brancas-romanas.html">Romanas</a></li>
+		<li class="dropdown">
+	    <a class="dropbtn" href="armas-brancas-japonesas1.html">Japonesas</a>
+	    <div class="dropdown-content">
+	      <a href="armas-brancas-japonesas1.html">Katana</a>
+	      <a href="armas-brancas-japonesas2.html">Shuriken</a>
+	      <a href="armas-brancas-japonesas3.html">Kunai</a>
+	    </div>
+	  	</li>
+	  	<li><a href="armas-brancas-galeria.html">Galeria</a></li>
+	  	<li><a href="armas-brancas-avaliacao.html">Avaliação</a></li>
+	</ul>
+	<h1>Avaliação do Site</h1>
+	<div class="container">
+		<form action="armas-brancas-obrigado.html" method="GET">
+			<div class="row">
+				<div class="col-25"><label for="pnome">Nome</label></div>
+				<div class="col-75">
+					<input type="text" name="firstname" id="pnome" placeholder="Nome">
+				</div>
+			</div>	
+			<div class="row">	
+				<div class="col-25"><label for="snome">Sobrenome</label></div>
+				<div class="col-75">
+					<input type="text" name="lastname" id="snome" placeholder="Sobrenome">
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-25"><label for="estado">Avaliação</label></div>
+				<div class="col-75">
+					<select>
+						<option value="gosteimt">Gostei muito</option>
+						<option value="gostei">Gostei</option>
+						<option value="normal">Achei normal</option>
+						<option value="ruim">Ficou ruim</option>
+						<option value="mtruim">Minha avó faria melhor</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25"><label for="coment">Comentário</label></div>
+				<div class="col-75">
+					<textarea id="coment" name="coment" placeholder="Deixe seu comentário aqui..." style="height: 200px;"></textarea>
+				</div>
+			</div>
+			<br>
+			<div class="row">	
+				<input type="submit" name="Enviar">
+			</div>	
+		</form>
+	</div>
+</body>
+</html>
